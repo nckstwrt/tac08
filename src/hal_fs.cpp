@@ -1,9 +1,24 @@
 #include "hal_fs.h"
 
+#ifdef _WIN32
+#include "../win-tac08/dirent.h"
+#include <filesystem>
+void getcwd(char *buf, int max) 
+{
+	strcpy(buf, std::filesystem::current_path().generic_string().c_str());
+}
+void chdir(const char *szDir) 
+{
+	SetCurrentDirectoryA(szDir);
+}
+#else
 #include <dirent.h>
+#include <unistd.h>
+#endif
+
 #include <sys/stat.h>
 #include <sys/types.h>
-#include <unistd.h>
+
 
 namespace hal_fs {
 	std::string cwd() {

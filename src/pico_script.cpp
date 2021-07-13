@@ -714,7 +714,7 @@ static int impl_ord(lua_State* ls) {
 	DEBUG_DUMP_FUNCTION
 	const char* msg = luaL_checkstring(lstate, 1);
 	if (msg && strlen(msg)) {
-		lua_pushnumber(ls, (uint)msg[0]);
+		lua_pushnumber(ls, (lua_Number)msg[0]);
 		return 1;
 	}
 	return 0;

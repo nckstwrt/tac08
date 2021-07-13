@@ -153,6 +153,9 @@
     <ClInclude Include="..\src\crypt.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\src\pico_gfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="win-tac08.rc">
@@ -310,6 +313,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\src\crypt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\pico_gfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hal_fs.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -169,13 +169,14 @@
     <ClCompile Include="..\src\crypt.cpp" />
     <ClCompile Include="..\src\hal_audio.cpp" />
     <ClCompile Include="..\src\hal_core.cpp" />
+    <ClCompile Include="..\src\hal_fs.cpp" />
     <ClCompile Include="..\src\hal_palette.cpp" />
     <ClCompile Include="..\src\log.cpp" />
     <ClCompile Include="..\src\main.cpp" />
     <ClCompile Include="..\src\pico_audio.cpp" />
     <ClCompile Include="..\src\pico_cart.cpp" />
-    <ClCompile Include="..\src\pico_core.cpp" />    
-    <ClCompile Include="..\src\pico_gfx.cpp" />    
+    <ClCompile Include="..\src\pico_core.cpp" />
+    <ClCompile Include="..\src\pico_gfx.cpp" />
     <ClCompile Include="..\src\pico_data.cpp" />
     <ClCompile Include="..\src\pico_memory.cpp" />
     <ClCompile Include="..\src\pico_script.cpp" />
